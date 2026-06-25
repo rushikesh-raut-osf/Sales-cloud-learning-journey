@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Live Opportunity Stage Alerts" icon-name="standard:opportunity">
+        <div class="slds-p-horizontal_small slds-p-bottom_small">
+            <p class="slds-text-body_small slds-m-bottom_small">
+                Listening for updates on channel /event/Opportunity_Stage_Alert__e
+            </p>
+
+            <template if:true={hasAlerts}>
+                <ul class="slds-has-dividers_around-space">
+                    <template for:each={alerts} for:item="alert">
+                        <li key={alert.id} class="slds-item slds-p-vertical_x-small">
+                            <p class="slds-text-title_bold">{alert.opportunityName}</p>
+                            <p class="slds-text-body_small">
+                                {alert.oldStage} -> {alert.newStage}
+                            </p>
+                            <p class="slds-text-color_weak slds-text-body_small">
+                                Amount: {alert.amountDisplay} | Owner: {alert.ownerName}
+                            </p>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+
+            <template if:false={hasAlerts}>
+                <p class="slds-text-color_weak">No stage alerts yet.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
