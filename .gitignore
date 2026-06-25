@@ -1,0 +1,8 @@
+.sf/
+.sfdx/
+.localdevserver/
+.eslintcache
+.DS_Store
+coverage/
+node_modules/
+test-results/

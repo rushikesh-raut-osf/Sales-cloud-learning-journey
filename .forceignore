@@ -1,0 +1,4 @@
+**/*.dup
+**/.DS_Store
+**/node_modules/**
+**/.localdevserver/**

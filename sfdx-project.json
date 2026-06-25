@@ -1,17 +1,12 @@
 {
-  "name": "Sales-cloud-learning-journey",
-  "description": "Real-time Sales Cloud feature with LWC, Apex, Triggers, and Flows",
-  "version": "1.0.0",
-  "license": "MIT",
-  "sfdcLoginUrl": "https://orgfarm-b2cf4ae118-dev-ed.sandbox.my.salesforce.com",
-  "sourceApiVersion": "59.0",
   "packageDirectories": [
     {
       "path": "force-app/main/default",
       "default": true
     }
   ],
-  "plugins": {
-    "@salesforce/sfdx-scanner": {}
-  }
+  "name": "Sales-cloud-learning-journey",
+  "namespace": "",
+  "sfdcLoginUrl": "https://test.salesforce.com",
+  "sourceApiVersion": "59.0"
 }
