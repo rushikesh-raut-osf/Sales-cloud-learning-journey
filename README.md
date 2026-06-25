@@ -25,6 +25,8 @@ If you want a different retrieval mode, pass one of the explicit metadata flags 
 ./scripts/retrieve-metadata.sh --target-org <org-alias> --target-metadata-dir mdapi-out
 ```
 
+A starter manifest is provided at `manifest/package.xml` and can be expanded with additional metadata types as needed.
+
 Optional: set a default source directory once per shell session:
 
 ```bash
