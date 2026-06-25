@@ -2,3 +2,5 @@
 **/.DS_Store
 **/node_modules/**
 **/.localdevserver/**
+**/jsconfig.json
+**/.eslintrc.json
